@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="header-index tc">
+ <view class="h1-index">Software is eating your world...</view>
+  <video src="{{src}}" class="video" autoplay objectFit="fill"></video>
+</view>
+<view class="container">
+ <text class="h3">Are you lost in the tech jargon?</text>
+ <text class="h1">Hello and welcome.</text>
+ <text class="desc tc">Time to catch up and learn some coding basics.</text>
+ <text class="desc tc">Plus to ship a Wechat app fast...</text>
+ <text class="desc tc">It's China here!</text>
+ <view class="sonar" bindtap="jumpPage">
+  <image src="/image/white_logo_red_circle.png"></image>
+ </view>
+</view>

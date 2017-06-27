@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/overview/overview",
+    "pages/curriculum/curriculum"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Le Wagon",
+    "navigationBarTextStyle":"black"
+  }
+
+}

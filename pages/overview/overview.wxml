@@ -1,0 +1,29 @@
+<!--pages/overview/overview.wxml-->
+<view class="header header-grad1 h2 tc">
+  <view class="text-box">
+   <view class="grey-text">WHAT IS</view>
+   <text>LE WAGON?</text>
+  </view>
+</view>
+<view class="img-box-1">
+ <view class="img-text"><text class="img-em">We are</text> a coding school for business people. A community of 1500 entrepreneurs who use their web development skills to design great products. Innovate. Run a business. 
+Break things</view>
+</view>
+<view class="header header-grad2 h2 tc">
+ <view class="text-box">
+  <view class="grey-text">WHO SHOULD</view>
+  <text>ATTEND THE COURSE?</text>
+ </view>
+</view>
+
+<view class="img-box-2">
+ <view class="img-text"><text class="img-em">You are</text> a direction, senior management level, often interacting with digital agencies or dealing with IT specialists, tired of all the BS you get and looking to up your game.</view>
+</view>
+<view class="cta-container">
+<view class="tc h3">
+ <text>PART TIME</text>
+ <view class="cta-box tc">
+  <navigator url="/pages/curriculum/curriculum" class="cta-red">Fast-track</navigator>
+ </view>
+</view>
+</view>

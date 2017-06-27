@@ -1,0 +1,194 @@
+<!--pages/curriculum/curriculum.wxml-->
+<view class="header-index tc">
+ <view class="h1-index">Fast-track program</view>
+</view>
+<view class="container">
+ <view class="card">
+  <view class="card-content">
+   <view class="h1">
+Learn how the web works. In China.   
+   </view>
+   <view class="card-desc">
+   “Software is eating the world. China in particular. This accelerated course allows non-tech managers to demystify how any website works, think like developers and build WeChat applications from scratch!“
+   </view>
+  </view>
+  <view class="card-profile">
+   <view class="card-avatar">
+   </view>
+   <view class="avatar-info">
+    <view class="avatar-name">Boris Paillard</view>
+    <text>Le Wagon CEO</text>
+   </view>
+  </view>
+ </view>
+ <view class="card-shanghai">
+  <view class="desc-shanghai-card">September 19th - November 19th
+   <view class="subtitle">Course in English</view>
+  </view>
+ </view>
+ <view class="header h2 tc">
+  <image src="/image/white_logo_red_circle.png"></image>
+  <view class="text-box">
+   <view class="grey-text">PART-TIME COURSE</view>
+   <text>8 WEEKS. FROM 0 TO HERO.</text>
+  </view>
+ </view>
+</view>
+
+
+
+<view class="swiper-wrap">
+ <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{courses}}" wx:key="{{id}}">
+   
+    <swiper-item>
+      <view class="course">
+      <text>{{item.title}}</text>
+      <image src="{{item.img}}" class="slide-image"/>
+      </view>
+    </swiper-item>
+   
+  </block>
+ </swiper>
+</view>
+
+<view class="container">
+ <view class="h2 tc">
+  <view class="">
+   <view class="grey-text">BENEFITS</view>
+   <text>UPDATE YOUR SKILLS ASAP</text>
+  </view>
+ </view>
+
+ <view class="card-sm">
+  <view class="card-sm-pic">
+   <image src="http://os51j6pf4.bkt.clouddn.com/card-img-1.png"></image>
+  </view>
+  <view class="card-sm-desc">
+   <view class="card-sm-title">Discover the fundamentals</view>
+   <view class="card-sm-content">Learn the coding languages to build a modern website.</view> 
+   <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JAVASCRIPT</li>
+   </ul>
+  </view>
+ </view>
+ <view class="card-sm">
+  <view class="card-sm-pic">
+   <image src="http://os51j6pf4.bkt.clouddn.com/man-img.png"></image>
+  </view>
+  <view class="card-sm-desc">
+   <view class="card-sm-title">Understand the tools</view>
+   <view class="card-sm-content">Like the pros. Get familiar with the toolkit of the startups.</view> 
+   <ul>
+    <li>GIT</li>
+    <li>GITHUB</li>
+    <li>TERMINAL</li>
+   </ul>
+  </view>
+ </view>
+ <view class="card-sm">
+  <view class="card-sm-pic">
+   <image src="http://os51j6pf4.bkt.clouddn.com/code-img.png"></image>
+  </view>
+  <view class="card-sm-desc">
+   <view class="card-sm-title">Decrypt the jargon</view>
+   <view class="card-sm-content">DNS, CDN, SSH, FTP, CMS... This is insane! </view> 
+   <ul>
+    <li>HTTP</li>
+    <li>APIS</li>
+    <li>NETWORK</li>
+    <li>CULTURE</li>
+   </ul>
+  </view>
+ </view>
+ <view class="card-sm">
+  <view class="card-sm-pic">
+   <image src="http://os51j6pf4.bkt.clouddn.com/wechat-img.png"></image>
+  </view>
+  <view class="card-sm-desc">
+   <view class="card-sm-title">Ship a functional WeChat app!</view>
+   <view class="card-sm-content">Work with smart people to turn ideas into a prototype.</view> 
+   <ul>
+    <li>LEAN</li>
+    <li>MVP</li>
+    <li>AGILE</li>
+    <li>WECHAT</li>
+   </ul>
+  </view>
+ </view>
+</view>
+
+
+<view class="green-gradient">
+ <view class="h2 tc">
+  <view class="text-box-custom">
+   <view class="grey-text">LEARNING MODE</view>
+   <text>CONVINIENT & FAST PACED</text>
+  </view>
+ </view>
+
+ <view class="planning-card">
+  <view class="content border tc">
+   <view class="h2">Tuesdays</view>
+   <view class="h3">evening</view>
+   <view class="desc">Join us on-site or remote (video conference) for the weekly coding lecture.</view> 
+  </view>
+  <view class="content tc">
+   <view class="h2">Saturdays</view>
+   <view class="h3">half/full day</view>
+   <view class="desc">Meet the whole team and go through hands-on development exercises, helped by experts.</view> 
+  </view>
+ </view>
+</view>
+<view class="h2 tc">
+ <view class="text-box-custom">
+  <view class="grey-text">END GOAL</view>
+  <text>RELEASE AN APP</text>
+ </view>
+</view> 
+<view class="app-section">
+  <view class="content tc">
+   <view class="icon-1">
+    <image src="../../image/icon-1.png"></image>
+   </view>
+   <view class="desc">Pitch an idea, form a 
+multi-disciplinary team</view>
+ </view>
+  <view class="content tc">
+   <view class="icon-abc">
+    <image src="../../image/icon-abc.png"></image>
+   </view>
+   <view class="desc">Adopt the technical workflow to build a product like the best startups.</view> 
+  </view>
+ </view>
+ <view class="app-section">
+  <view class="content tc">
+   <view class="icon-pencil">
+    <image src="../../image/icon-pencil.png"></image>
+   </view>
+   <view class="desc">Design and code a functional prototype.</view> 
+  </view>
+  <view class="content tc">
+   <view class="icon-hat">
+    <image src="../../image/icon-hat.png"></image>
+   </view>
+   <view class="desc">Launch it on WeChat!
+Change your life.</view> 
+ </view>
+</view>
+<view class="cta-container tc">
+ <view class="cta-box tc">
+  <navigator bindtap="conditionModal" url="" class="cta-white">CONDITIONS</navigator>
+  </view>
+  <view class="cta-box tc">
+   <navigator bindtap="inquiryModal" url="" class="cta-green">INQUIRIES</navigator>
+  </view>
+  <image src="/image/white_logo_red_circle.png" class="logo-footer"></image>
+</view>
+ 
+
+
+
+

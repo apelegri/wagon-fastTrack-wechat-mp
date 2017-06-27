@@ -1,0 +1,84 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 20px;
+  box-sizing: border-box;
+} 
+
+/* reset */
+
+page {
+  font-size: 32rpx;
+  line-height: 1.6;
+  font-family: Avenir, Helvetica, sans-serif;
+}
+button{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+/* lib */
+
+.h1 {
+  font-weight:800;
+  font-size: 48rpx; 
+}
+.h2 {
+  font-weight: 700;
+  font-size: 36rpx;
+}
+.h3 {
+  font-weight:600;
+  font-size: 30rpx; 
+}
+
+.sep {
+  border-bottom:1px solid lightgray;
+}
+
+.em {
+  font-style: italic;
+  color:#D03232;
+}
+
+.desc {
+  margin-top: 20rpx;
+  color: black;
+  font-size: 28rpx;
+  line-height:17px;
+}
+
+.code {
+  font-style: italic;
+  opacity:0.8;
+}
+
+.strong{
+  font-weight: bold;
+}
+
+.tc{
+  text-align: center;
+}
+
+.tl{
+  text-align: left;
+}
+
+/* Small headers */
+.header {
+  height: 80px;
+}
+.text-box {
+  padding-top:48rpx;
+}
+.grey-text {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #AAA;
+  line-height:15px;
+}

@@ -1,0 +1,93 @@
+/* pages/overview/overview.wxss */
+
+.header-grad1:after {
+content:'';
+width:108%;
+height:80px;
+z-index:-1001;
+background-image:linear-gradient(-225deg, #FF719A 0%, #FFA99F 48%, #FFE29F 100%);
+position:absolute;
+top:0;
+left:-29px;
+-webkit-transform:skew(0deg, 9deg);
+transform:skew(0deg, 20deg);
+opacity:0.4;
+}
+.header-grad2:after {
+content:'';
+width:108%;
+height:80px;
+z-index:-1001;
+background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+position:absolute;
+left:-29px;
+-webkit-transform:skew(0deg, 9deg);
+transform:skew(100deg, 20deg);
+opacity:0.4;
+transform-origin: left bottom; 
+}
+/* Images */
+.img-box-1 {
+  text-align: center;
+  background-size: cover;
+  height: 300px;
+  display:flex;
+  align-items: center;
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.6) 30%, rgba(46,46,46,0.5) 80%), url('http://os51j6pf4.bkt.clouddn.com/img-1.png');
+  background-position: center;
+}
+.img-text {
+  align-content: center;
+  color: white;
+  text-align: left;
+  font-size: 35rpx; 
+  padding:32px;
+  line-height:20px;
+  margin-top:125px;
+}
+.img-em {
+  font-weight: bold;
+  font-size:56rpx;
+}
+.img-box-2 {
+  text-align: center;
+  background-size: cover;
+  height: 300px;
+  display:flex;
+  align-items: center;
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.6) 30%, rgba(46,46,46,0.5) 80%), url('http://os51j6pf4.bkt.clouddn.com/img-2.png');
+  background-position: center;
+}
+
+/* CTA */
+.cta-container {
+  background-color: #F4F4F4;
+  height:120px;
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+}
+.cta-box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13rpx 8px;
+  box-sizing: border-box;
+  margin:0rpx 140rpx 40rpx;
+}
+
+.cta-red {
+  width: 100%;
+  border-radius: 8rpx;
+  background-color: #D23333;
+  color: white;
+  text-align: center;
+  vertical-align: center;
+  font-weight: bold;
+  font-size: 35rpx;
+  padding:25rpx;
+}
+.h3 {
+  margin-top:35rpx;
+}
+
