@@ -1,0 +1,50 @@
+<!--pages/show/show.wxml-->
+<view class="header-index tc">
+ <image src="/image/white_logo_red_circle.png" class="logo-show"></image>
+</view>
+<!-- CARD SECTION -->
+<view class="container">
+ <block wx:for="{{courses}}" wx:key="">
+  <block wx:if="{{item.course_id == courseId}}">
+   <view class="card" >
+    <view class="top-border">
+     <view class="card-content">
+      <view class="h3">{{item.numLecture}}</view> 
+      <view class="h1">{{item.titleLecture}}</view> 
+     </view>
+     <view class="card-profile">
+      <view class="card-avatar">
+      <image src="item.teacherAvatar"></image>
+      </view>
+      <view class="avatar-info">
+       <view class="avatar-name">{{item.teacherName}}</view>
+       <view>{{item.teacherDesc}}</view>
+      </view>
+     </view>
+    </view>
+    <view class="course-desc">
+    <view class="sub-title-desc">{{item.subtitle}}</view>
+     <view>{{item.desc1}}</view>
+     <view>{{item.desc2}}</view>
+     <view>{{item.desc3}}</view>
+     <view>{{item.desc4}}</view>
+     <view>{{item.desc5}}</view>
+     <view>{{item.desc6}}</view>
+     <view>{{item.desc7}}</view>
+     <view>{{item.desc8}}</view> 
+     <view>{{item.desc9}}</view> 
+     <view>{{item.desc10}}</view> 
+    </view>
+    <!-- CTA SECTION -->
+    <view class="cta-container">
+     <view class="tc h3">
+      <text>{{btnTitle}}</text>
+      <view class="cta-box tc">
+       <navigator url="" id="{{item.course_id}}"bindtap="nextLecture" class="cta-red">Fast-track program</navigator>
+      </view>
+     </view>
+    </view>
+   </view>
+  </block>
+ </block>
+</view>

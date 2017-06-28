@@ -27,6 +27,13 @@ button{
   font-weight:800;
   font-size: 48rpx; 
 }
+.h1-white {
+  color: white;
+  font-weight:800;
+  font-size: 48rpx; 
+}
+
+
 .h2 {
   font-weight: 700;
   font-size: 36rpx;
@@ -51,7 +58,12 @@ button{
   font-size: 28rpx;
   line-height:17px;
 }
-
+.desc-white {
+  margin-top: 20rpx;
+  color: white;
+  font-size: 30rpx;
+  line-height:17px;
+}
 .code {
   font-style: italic;
   opacity:0.8;

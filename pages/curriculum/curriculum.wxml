@@ -1,7 +1,9 @@
 <!--pages/curriculum/curriculum.wxml-->
+<!-- HEADER GRADIENT-->
 <view class="header-index tc">
  <view class="h1-index">Fast-track program</view>
 </view>
+<!-- CARD TOP PAGE -->
 <view class="container">
  <view class="card">
   <view class="card-content">
@@ -21,6 +23,7 @@ Learn how the web works. In China.
    </view>
   </view>
  </view>
+<!-- CARD SHNAGHAI -->
  <view class="card-shanghai">
   <view class="desc-shanghai-card">September 19th - November 19th
    <view class="subtitle">Course in English</view>
@@ -34,24 +37,24 @@ Learn how the web works. In China.
   </view>
  </view>
 </view>
-
-
-
+<!-- SWIPER -->
 <view class="swiper-wrap">
- <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-  <block wx:for="{{courses}}" wx:key="{{id}}">
-   
-    <swiper-item>
-      <view class="course">
-      <text>{{item.title}}</text>
-      <image src="{{item.img}}" class="slide-image"/>
-      </view>
+ <swiper indicator-dots="{{indicatorDots}}" indicator-color="rgba(255, 255, 255, 0.4)" indicator-active-color="rgba(255, 255, 255, 1)" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular>
+ <view class="lecture">
+  <block wx:for="{{courses}}" wx:key="">
+    <swiper-item id="{{item.id}}" bindtap="showRedirect">
+       <text class="h1-white">{{item.title}}</text>
+       <text class="desc-white">{{item.subTitle}}</text>
+       <text class="h1-white">{{item.tag}}</text>
+       <view class="img-grad"></view>
+       <image src="{{item.img}}" mode="aspectFill" class="image-style"/>
+     
     </swiper-item>
-   
-  </block>
+   </block>
+  </view> 
  </swiper>
 </view>
-
+<!-- OVERVIEW FAST TRACK BENEFITS  -->
 <view class="container">
  <view class="h2 tc">
   <view class="">
@@ -59,7 +62,6 @@ Learn how the web works. In China.
    <text>UPDATE YOUR SKILLS ASAP</text>
   </view>
  </view>
-
  <view class="card-sm">
   <view class="card-sm-pic">
    <image src="http://os51j6pf4.bkt.clouddn.com/card-img-1.png"></image>
@@ -119,8 +121,7 @@ Learn how the web works. In China.
   </view>
  </view>
 </view>
-
-
+<!-- GRADIENT PAGE BOTTOM -->
 <view class="green-gradient">
  <view class="h2 tc">
   <view class="text-box-custom">
@@ -128,7 +129,7 @@ Learn how the web works. In China.
    <text>CONVINIENT & FAST PACED</text>
   </view>
  </view>
-
+ <!-- PLANNING SECTION -->
  <view class="planning-card">
   <view class="content border tc">
    <view class="h2">Tuesdays</view>
@@ -142,6 +143,7 @@ Learn how the web works. In China.
   </view>
  </view>
 </view>
+<!-- END GOAL SECTION -->
 <view class="h2 tc">
  <view class="text-box-custom">
   <view class="grey-text">END GOAL</view>
@@ -178,6 +180,7 @@ multi-disciplinary team</view>
 Change your life.</view> 
  </view>
 </view>
+<!-- BOTTOM CTA -->
 <view class="cta-container tc">
  <view class="cta-box tc">
   <navigator bindtap="conditionModal" url="" class="cta-white">CONDITIONS</navigator>

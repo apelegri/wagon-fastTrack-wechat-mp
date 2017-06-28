@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/overview/overview",
-    "pages/curriculum/curriculum"
+    "pages/curriculum/curriculum",
+    "pages/show/show"
   ],
   "window":{
     "backgroundTextStyle":"light",
