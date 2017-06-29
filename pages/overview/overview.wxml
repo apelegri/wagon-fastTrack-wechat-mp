@@ -18,14 +18,14 @@ Break things</view>
  </view>
 </view>
 <view class="img-box-2">
- <view class="img-text"><text class="img-em">You are</text> a direction, senior management level, often interacting with digital agencies or dealing with IT specialists, tired of all the BS you get and looking to up your game.</view>
+ <view class="img-text"><text class="img-em">You are</text> direction, senior management level, often interacting with digital agencies or dealing with IT specialists, tired of all the BS you get and looking to up your game.</view>
 </view>
 <!-- CTA SECTION -->
 <view class="cta-container">
  <view class="tc h3">
   <text>PART TIME</text>
   <view class="cta-box tc">
-   <navigator url="/pages/curriculum/curriculum" class="cta-red">Fast-track</navigator>
+   <navigator url="/pages/curriculum/curriculum" class="cta-red"><text class="em">Fast</text>-track program</navigator>
   </view>
  </view>
 </view>

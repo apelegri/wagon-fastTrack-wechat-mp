@@ -3,12 +3,12 @@
     "pages/index/index",
     "pages/overview/overview",
     "pages/curriculum/curriculum",
-    "pages/show/show"
+    "pages/show/show",
+    "pages/conditions/conditions"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Le Wagon",
     "navigationBarTextStyle":"black"
   }
 

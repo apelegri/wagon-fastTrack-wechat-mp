@@ -1,10 +1,10 @@
 //index.js
 Page({
   data: {
-   src:'http://os51j6pf4.bkt.clouddn.com/home-video.mp4'
+   src:'http://osadw33sx.bkt.clouddn.com/home-video.mp4'
   },
   jumpPage: function (){
-    wx.redirectTo({
+    wx.navigateTo({
     url: '../overview/overview',
     fail: function(res) {},
     complete: function(res) {},

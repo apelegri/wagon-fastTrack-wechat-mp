@@ -1,7 +1,7 @@
 <!--pages/curriculum/curriculum.wxml-->
 <!-- HEADER GRADIENT-->
 <view class="header-index tc">
- <view class="h1-index">Fast-track program</view>
+ <view class="h1-index"> <text class="em">Fast</text>-track program</view>
 </view>
 <!-- CARD TOP PAGE -->
 <view class="container">
@@ -19,7 +19,7 @@ Learn how the web works. In China.
    </view>
    <view class="avatar-info">
     <view class="avatar-name">Boris Paillard</view>
-    <text>Le Wagon CEO</text>
+    <text class="position">Le Wagon CEO</text>
    </view>
   </view>
  </view>
@@ -45,9 +45,15 @@ Learn how the web works. In China.
     <swiper-item id="{{item.id}}" bindtap="showRedirect">
        <text class="h1-white">{{item.title}}</text>
        <text class="desc-white">{{item.subTitle}}</text>
-       <text class="h1-white">{{item.tag}}</text>
+       <view class="tags">
+        <ul>
+          <li>LECTURE</li>
+          <li>WORKSHOP</li>
+        </ul>
+       </view>
        <view class="img-grad"></view>
        <image src="{{item.img}}" mode="aspectFill" class="image-style"/>
+       
      
     </swiper-item>
    </block>
@@ -64,7 +70,7 @@ Learn how the web works. In China.
  </view>
  <view class="card-sm">
   <view class="card-sm-pic">
-   <image src="http://os51j6pf4.bkt.clouddn.com/card-img-1.png"></image>
+   <image src="http://osadw33sx.bkt.clouddn.com/card-sm-img1.png"></image>
   </view>
   <view class="card-sm-desc">
    <view class="card-sm-title">Discover the fundamentals</view>
@@ -78,7 +84,7 @@ Learn how the web works. In China.
  </view>
  <view class="card-sm">
   <view class="card-sm-pic">
-   <image src="http://os51j6pf4.bkt.clouddn.com/man-img.png"></image>
+   <image src="http://osadw33sx.bkt.clouddn.com/card-sm-img4.png"></image>
   </view>
   <view class="card-sm-desc">
    <view class="card-sm-title">Understand the tools</view>
@@ -92,7 +98,7 @@ Learn how the web works. In China.
  </view>
  <view class="card-sm">
   <view class="card-sm-pic">
-   <image src="http://os51j6pf4.bkt.clouddn.com/code-img.png"></image>
+   <image src="http://osadw33sx.bkt.clouddn.com/card-sm-img3.png"></image>
   </view>
   <view class="card-sm-desc">
    <view class="card-sm-title">Decrypt the jargon</view>
@@ -107,7 +113,7 @@ Learn how the web works. In China.
  </view>
  <view class="card-sm">
   <view class="card-sm-pic">
-   <image src="http://os51j6pf4.bkt.clouddn.com/wechat-img.png"></image>
+   <image src="http://osadw33sx.bkt.clouddn.com/card-sm-img2.png"></image>
   </view>
   <view class="card-sm-desc">
    <view class="card-sm-title">Ship a functional WeChat app!</view>
@@ -126,7 +132,7 @@ Learn how the web works. In China.
  <view class="h2 tc">
   <view class="text-box-custom">
    <view class="grey-text">LEARNING MODE</view>
-   <text>CONVINIENT & FAST PACED</text>
+   <text>CONVENIENT & FAST PACED</text>
   </view>
  </view>
  <!-- PLANNING SECTION -->
@@ -153,14 +159,14 @@ Learn how the web works. In China.
 <view class="app-section">
   <view class="content tc">
    <view class="icon-1">
-    <image src="../../image/icon-1.png"></image>
+    <image src="http://osadw33sx.bkt.clouddn.com/icon-light.png"></image>
    </view>
    <view class="desc">Pitch an idea, form a 
 multi-disciplinary team</view>
  </view>
   <view class="content tc">
    <view class="icon-abc">
-    <image src="../../image/icon-abc.png"></image>
+    <image src="http://osadw33sx.bkt.clouddn.com/icon-abc.png"></image>
    </view>
    <view class="desc">Adopt the technical workflow to build a product like the best startups.</view> 
   </view>
@@ -168,13 +174,13 @@ multi-disciplinary team</view>
  <view class="app-section">
   <view class="content tc">
    <view class="icon-pencil">
-    <image src="../../image/icon-pencil.png"></image>
+    <image src="http://osadw33sx.bkt.clouddn.com/icon-pencil.png"></image>
    </view>
    <view class="desc">Design and code a functional prototype.</view> 
   </view>
   <view class="content tc">
    <view class="icon-hat">
-    <image src="../../image/icon-hat.png"></image>
+    <image src="http://osadw33sx.bkt.clouddn.com/icon-hat.png"></image>
    </view>
    <view class="desc">Launch it on WeChat!
 Change your life.</view> 
@@ -183,7 +189,7 @@ Change your life.</view>
 <!-- BOTTOM CTA -->
 <view class="cta-container tc">
  <view class="cta-box tc">
-  <navigator bindtap="conditionModal" url="" class="cta-white">CONDITIONS</navigator>
+  <navigator url="/pages/conditions/conditions" class="cta-white">CONDITIONS</navigator>
   </view>
   <view class="cta-box tc">
    <navigator bindtap="inquiryModal" url="" class="cta-green">INQUIRIES</navigator>

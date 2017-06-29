@@ -1,0 +1,51 @@
+<!--pages/conditions/conditions.wxml-->
+<!-- HEADER GRADIENT-->
+<view class="blue-gradient tc">
+ <view class="h1-gradient">Fast-track program conditions</view>
+</view>
+<view class="container">
+ <view class="card">
+  <view class="card-content">
+
+  <view class="h1">Part-time accelerated course.</view>
+   <view class="card-desc">
+   Le Wagon's <text class="em">Fast</text>-track program welcomes seasoned professionals, with a track record in either digital, design, sales, marketing or general management in China. 
+
+   </view>
+   <view class="h3">In particular, we expect you:</view>
+   <view class="list-box">
+    <view class="list-item">- To leave your ego at the door.</view>
+    <view class="list-item">- To be a strong team player</view>
+    <view class="list-item">- To build sh*t that matters</view>
+    <view class="list-item">- To be up for some challenges</view>
+   </view>
+
+   <view class="tc">
+    <image src="/image/white_logo_red_circle.png"></image>
+    <view class="text-box">
+     <view class="grey-text">WE WILL START FROM SCRATCH</view>
+     <text> NO PRE-REQUISITES IN WEB DEVELOPMENT</text>
+    </view>
+   </view>
+
+
+
+   <view class="em-conditions tc">
+   </view>
+   <view class="h3">Terms & Conditions:</view>
+    <view class="list-box">
+     <view class="list-item">- Application deadline: August 20</view>
+     <view class="list-item">- Tuition: 13,999 RMB</view>
+     <view class="list-item">- Group size: 20</view>
+   </view>
+  </view>
+ </view>
+</view>
+<view class="cta-container">
+ <view class="tc h3">
+  <text>CURRICULUM</text>
+  <view class="cta-box tc">
+   <navigator url="" class="cta-red" bindtap="backBtn">Back</navigator>
+  </view>
+ </view>
+</view>

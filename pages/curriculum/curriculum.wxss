@@ -1,5 +1,8 @@
 /* pages/curriculum/curriculum.wxss */
 /* HEADER GRADIENT */
+.container {
+  padding: 0rpx 20rpx;
+}
 .header-index::before {
   content: '';
   width: 100%;
@@ -67,7 +70,7 @@
   height: 80rpx;
   border-radius:100%;
   display:flex;
-  background-image:linear-gradient(-225deg, rgba(30,30,30,0.1) 30%, rgba(46,46,46,0.3) 80%), url('http://os51j6pf4.bkt.clouddn.com/boris-face.png');
+  background-image:linear-gradient(-225deg, rgba(30,30,30,0.1) 30%, rgba(46,46,46,0.3) 80%), url('http://osadw33sx.bkt.clouddn.com/boris-avatar.png');
   background-position:center;
   position:absolute;
   bottom:14px;
@@ -75,13 +78,16 @@
 }
 .avatar-info {
   position:absolute;
-  right:146px;
+  left:70px;
   bottom:15px;
   line-height:36rpx;
 }
 .avatar-name {
   font-size: 28rpx;
   font-weight: 600; 
+}
+.position {
+  font-size:23rpx;
 }
 .img-grad {
   background: linear-gradient(-225deg, rgba(30,30,30,0.6) 30%, rgba(46,46,46,0.5) 80%);
@@ -97,7 +103,7 @@
   width: 100%;
   border-radius: 8rpx;
   background-size:cover;
-  background-image:linear-gradient(-225deg, rgba(30,30,30,0.4) 30%, rgba(46,46,46,0.3) 80%), url('http://os51j6pf4.bkt.clouddn.com/shanghai.png');
+  background-image:linear-gradient(-225deg, rgba(30,30,30,0.4) 30%, rgba(46,46,46,0.3) 80%), url('http://osadw33sx.bkt.clouddn.com/shanghai.png');
   background-position:center;
   margin-top:20px;
   box-shadow: 3px 6px 12px 0px rgba(0,0,0,0.1);
@@ -159,7 +165,7 @@ swiper {
   position:absolute;
   width: 100%;
   left: 0;
-  top:160px;
+  top:137px;
   margin-left:40rpx;
   z-index:2;
 }
@@ -167,11 +173,34 @@ swiper {
   position:absolute;
   width: 100%;
   left: 0;
-  top:190px;
+  top:167px;
   padding-left:40rpx;
-  max-width:300px;
+  max-width:325px;
   z-index:2;
 }
+
+.tags ul {
+  display:flex;
+margin-top:13px;
+}
+.tags ul li {
+  padding: 3px 5px 1px;
+  margin-right: 5px;
+  background-color: #FFF;
+  border-radius: 2px;
+  color: black;
+  font-size: 0.7em;
+  text-transform: capitalize;
+}
+.tags {
+  position:absolute;
+  width:100%;
+  left:0;
+  top:205px;
+  margin-left:40rpx;
+  z-index:2;
+}
+
 
 /* CARDS SM SECTION */
 .card-sm {
@@ -342,4 +371,6 @@ swiper {
   font-size: 35rpx;
   padding:25rpx;
 }
+
+
 

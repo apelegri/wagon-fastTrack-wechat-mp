@@ -3,25 +3,25 @@
  <image src="/image/white_logo_red_circle.png" class="logo-show"></image>
 </view>
 <!-- CARD SECTION -->
-<view class="container">
- <block wx:for="{{courses}}" wx:key="">
-  <block wx:if="{{item.course_id == courseId}}">
-   <view class="card" >
-    <view class="top-border">
+
+<block wx:for="{{courses}}" wx:key="">
+ <block wx:if="{{item.course_id == courseId}}">
+  <view class="container">
+   <view class="card-lecture" >
+
      <view class="card-content">
       <view class="h3">{{item.numLecture}}</view> 
       <view class="h1">{{item.titleLecture}}</view> 
      </view>
-     <view class="card-profile">
-      <view class="card-avatar">
-      <image src="item.teacherAvatar"></image>
-      </view>
+     <view class="card-profile-green">
+      <view class="grad-avatar"></view>
+      <image src="{{item.teacherAvatar}}" mode="scaleToFill" class="card-avatar"></image>  
       <view class="avatar-info">
        <view class="avatar-name">{{item.teacherName}}</view>
-       <view>{{item.teacherDesc}}</view>
+       <view class="position">{{item.teacherDesc}}</view>
       </view>
      </view>
-    </view>
+   
     <view class="course-desc">
     <view class="sub-title-desc">{{item.subtitle}}</view>
      <view>{{item.desc1}}</view>
@@ -35,16 +35,39 @@
      <view>{{item.desc9}}</view> 
      <view>{{item.desc10}}</view> 
     </view>
-    <!-- CTA SECTION -->
-    <view class="cta-container">
-     <view class="tc h3">
-      <text>{{btnTitle}}</text>
-      <view class="cta-box tc">
-       <navigator url="" id="{{item.course_id}}"bindtap="nextLecture" class="cta-red">Fast-track program</navigator>
+   </view>
+    <view class="card-workshop">
+  
+      <view class="card-content">
+       <view class="h3">{{item.numWorkshop}}</view> 
+       <view class="h1">{{item.workshopTitle}}</view> 
       </view>
+      <view class="card-profile-red">
+       <view class="grad-avatar"></view>
+       <image src="{{item.teacherAvatar}}" mode="scaleToFill" class="card-avatar"></image>  
+       <view class="avatar-info">
+        <view class="avatar-name">{{item.workshopTeacher}}</view>
+        <view class="position">{{item.workshopTeacherDesc}}</view>
+       </view>
+      </view>
+     
+     <view class="course-desc">
+      <view>{{item.workshopDesc}}</view>
      </view>
+    
+   </view>
+  </view>
+  <!-- CTA SECTION -->
+  <view class="cta-container">
+   <view class="tc h3">
+    <view><text class="em">Fast</text>-track program</view>
+    <view class="cta-box tc">
+     <navigator url="" id="{{item.course_id}}"bindtap="nextLecture" class="cta-red">NEXT LECTURE</navigator> 
+    </view>
+    <view class="cta-box tc">
+     <navigator url="" id="{{item.course_id}}"bindtap="previousLecture" class="cta-white">PREVIOUS LECTURE</navigator> 
     </view>
    </view>
-  </block>
+  </view>
  </block>
-</view>
+</block>

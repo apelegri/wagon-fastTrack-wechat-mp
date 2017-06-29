@@ -2,7 +2,7 @@
  <!-- HEADER -->
 <view class="header-index tc">
  <view class="h1-index">Software is eating your world...</view>
-  <video src="{{src}}" class="video" autoplay objectFit="fill"></video>
+  <video src="{{src}}" class="video" autoplay="true" objectFit="fill"></video>
 </view>
  <!-- BODY -->
 <view class="container">
