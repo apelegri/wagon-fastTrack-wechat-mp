@@ -1,12 +1,12 @@
 <!--pages/curriculum/curriculum.wxml-->
 <!-- HEADER GRADIENT-->
-<view class="header-index tc">
- <view class="h1-index"> <text class="em">Fast</text>-track program</view>
+<view class="green-gradient tc">
+ <view class="h1-gradient"> <text class="em">Fast</text>-track program</view>
 </view>
-<!-- CARD TOP PAGE -->
+<!-- CARD TOP BODY PAGE -->
 <view class="container">
- <view class="card">
-  <view class="card-content">
+ <view class="card-border-left">
+  <view class="card-head-section">
    <view class="h1">
 Learn how the web works. In China.   
    </view>
@@ -26,10 +26,10 @@ Learn how the web works. In China.
 <!-- CARD SHNAGHAI -->
  <view class="card-shanghai">
   <view class="desc-shanghai-card">September 19th - November 19th
-   <view class="subtitle">Course in English</view>
+   <view class="subtitle-shanghai-card">Course in English</view>
   </view>
  </view>
- <view class="header h2 tc">
+ <view class="logo-title-box h2 tc">
   <image src="/image/white_logo_red_circle.png"></image>
   <view class="text-box">
    <view class="grey-text">PART-TIME COURSE</view>
@@ -62,11 +62,9 @@ Learn how the web works. In China.
 </view>
 <!-- OVERVIEW FAST TRACK BENEFITS  -->
 <view class="container">
- <view class="h2 tc">
-  <view class="">
+ <view class="text-header-box h2 tc">
    <view class="grey-text">BENEFITS</view>
    <text>UPDATE YOUR SKILLS ASAP</text>
-  </view>
  </view>
  <view class="card-sm">
   <view class="card-sm-pic">
@@ -128,12 +126,11 @@ Learn how the web works. In China.
  </view>
 </view>
 <!-- GRADIENT PAGE BOTTOM -->
-<view class="green-gradient">
- <view class="h2 tc">
-  <view class="text-box-custom">
-   <view class="grey-text">LEARNING MODE</view>
-   <text>CONVENIENT & FAST PACED</text>
-  </view>
+<view class="container-grad">
+<view class="green-body-gradient"></view>
+ <view class="text-header-box2 h2 tc">
+  <view class="grey-text">LEARNING MODE</view>
+  <text>CONVENIENT & FAST PACED</text>
  </view>
  <!-- PLANNING SECTION -->
  <view class="planning-card">
@@ -148,13 +145,10 @@ Learn how the web works. In China.
    <view class="desc">Meet the whole team and go through hands-on development exercises, helped by experts.</view> 
   </view>
  </view>
-</view>
 <!-- END GOAL SECTION -->
-<view class="h2 tc">
- <view class="text-box-custom">
-  <view class="grey-text">END GOAL</view>
-  <text>RELEASE AN APP</text>
- </view>
+<view class="text-header-box2 h2 tc">
+ <view class="grey-text">END GOAL</view>
+ <text>RELEASE AN APP</text>
 </view> 
 <view class="app-section">
   <view class="content tc">
@@ -186,15 +180,16 @@ multi-disciplinary team</view>
 Change your life.</view> 
  </view>
 </view>
+</view>
 <!-- BOTTOM CTA -->
-<view class="cta-container tc">
- <view class="cta-box tc">
+<view class="cta-container-curriculum tc"> 
+ <view class="cta-box-curriculum tc">
   <navigator url="/pages/conditions/conditions" class="cta-white">CONDITIONS</navigator>
-  </view>
-  <view class="cta-box tc">
-   <navigator bindtap="inquiryModal" url="" class="cta-green">INQUIRIES</navigator>
-  </view>
-  <image src="/image/white_logo_red_circle.png" class="logo-footer"></image>
+ </view>
+ <view class="cta-box-curriculum tc">
+  <navigator url="/pages/inquiries/inquiries" class="cta-green">INQUIRIES</navigator>
+ </view>
+ <image src="/image/white_logo_red_circle.png" class="logo-footer"></image>
 </view>
  
 

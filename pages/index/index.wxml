@@ -1,7 +1,7 @@
 <!--index.wxml-->
  <!-- HEADER -->
-<view class="header-index tc">
- <view class="h1-index">Software is eating your world...</view>
+<view class="orange-gradient tc">
+ <view class="h1-gradient">Software is eating your world...</view>
   <video src="{{src}}" class="video" autoplay="true" objectFit="fill"></video>
 </view>
  <!-- BODY -->
@@ -12,7 +12,7 @@
  <text class="desc tc">Plus to ship a Wechat app fast...</text>
  <text class="desc tc">It's China here!</text>
  <!-- ANIMATED CTA -->
- <view class="scrolldown" bindtap="jumpPage">
+ <view class="sonarEffect" bindtap="jumpPage">
   <image src="/image/white_logo_red_circle.png"></image>
  </view>
 </view>

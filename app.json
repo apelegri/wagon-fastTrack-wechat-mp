@@ -4,7 +4,8 @@
     "pages/overview/overview",
     "pages/curriculum/curriculum",
     "pages/show/show",
-    "pages/conditions/conditions"
+    "pages/conditions/conditions",
+    "pages/inquiries/inquiries"
   ],
   "window":{
     "backgroundTextStyle":"light",

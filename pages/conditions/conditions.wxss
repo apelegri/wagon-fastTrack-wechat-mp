@@ -1,58 +1,23 @@
 /* pages/conditions/conditions.wxss */
-.container {
-  padding: 0rpx 20rpx;
+/* FIX COMMON STYLE */
+.h1 {
+  line-height:54rpx;
 }
-
-.blue-gradient:before {
-  content: '';
-  width: 100%;
-  height: 230px;
-  z-index: -1000;
-  background-image: linear-gradient(to right, #1cd8d2, #93edc7);
-  transform-origin: left bottom;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: skew(0deg, -15deg);
+.h3 {
+  margin-top:20rpx;
 }
-.blue-gradient:after {
-    content: '';
-    width: 100%;
-    height: 250px;
-    z-index: -1001;
-    background-image: -webkit-linear-gradient(left, #1cd8d2, #93edc7);
-    background-image: linear-gradient(to right, #1cd8d2, #93edc7);
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-transform: skew(0deg, 9deg);
-    transform: skew(0deg, 9deg);
-    opacity: 0.4;
-}
-.h1-gradient {
-  font-weight:800;
-  font-size: 60rpx; 
-  color: white;
-  text-shadow: 0px 2px 0px rgba(0,0,0,0.15);
-  padding: 60rpx 60rpx 30rpx 60rpx;
-  line-height:70rpx;
-}
+/* CARD */
 .card {
   background-color: white;
   border-radius: 8rpx;
-  box-shadow: 3px 6px 12px 0px rgba(0,0,0,0.1); 
+  box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
   min-height:135px;
   max-width:100%;
   position: relative;
-  margin-top: 20px;
+  margin-bottom:45rpx
 }
 .card-content {
   padding:30rpx; 
-}
-.h1 {
-  line-height:48rpx;
 }
 .card-desc {
   margin-top: 20rpx;
@@ -63,23 +28,18 @@
   color: #AAA;
   font-size: 28rpx;
 }
-
-.h3 {
-  margin-top: 20rpx;
-}
-.em-conditions {
-  font-size: 30rpx;
-  font-weight: 500;
-
-padding:0rpx 25px;
-
-}
 .list-box {
   padding:13rpx;
   margin-left:15rpx
 }
 
-
+/* LOGO AND TITLE */
+.em-conditions {
+  font-size: 30rpx;
+  font-weight: 500;
+  padding-top:30rpx;
+  padding-bottom:30rpx;
+}
 
 /* CTA */
 .cta-container {
@@ -87,6 +47,7 @@ padding:0rpx 25px;
   height:120px;
   padding-top: 25rpx;
   padding-bottom: 25rpx;
+  z-index: -1500;
 }
 .cta-box {
   height: 100%;
@@ -108,12 +69,7 @@ padding:0rpx 25px;
   font-size: 35rpx;
   padding:25rpx;
 }
-.h3 {
-  margin-top:35rpx;
-}
-.container {
-  background-color: #F4F4F4;
-}
+
 image {
   width: 50px;
   height: 50px;
@@ -121,8 +77,6 @@ image {
   position:relative;
   margin-top: 22px;
 }
-
-
 .text-box {
 padding-top:20rpx;
 font-size:29rpx;

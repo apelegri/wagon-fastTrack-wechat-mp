@@ -1,0 +1,36 @@
+<!--pages/inquiries/inquiries.wxml-->
+<view class="blue-gradient tc">
+ <view class="h1-gradient">Fast-track program inquiries</view>
+</view>
+<view class="container">
+ <view class="card">
+  <view class="card-content">
+  <view class="h1">CONTACT US</view>
+   <view class="card-desc">
+   Le Wagon's <text class="em">Fast</text>-track program welcomes seasoned professionals, with a track record in either digital, design, sales, marketing or general management in China. 
+   </view>
+   <view class="contact">
+    <view class="contact-info">
+     <image src="/image/mail.png" class="logo-contact"></image>
+     <text class="h3">shanghai@lewagon.com</text>
+    </view>
+    <view class="contact-info">
+     <image src="/image/phone.png" class="logo-contact"></image>
+     <text class="h3">+86 18512178868</text>
+    </view>
+   </view>
+  </view>
+  
+ </view>
+ <view class="gif">
+   <image src="/image/wagon.gif"></image>
+  </view>
+</view>
+<view class="cta-container">
+ <view class="tc h3">
+  <text>BACK TO</text>
+  <view class="cta-box tc">
+   <navigator url="" class="cta-red" bindtap="backBtn">CURRICULUM</navigator>
+  </view>
+ </view>
+</view>

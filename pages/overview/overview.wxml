@@ -1,7 +1,7 @@
 <!--pages/overview/overview.wxml-->
 <!-- FIRST SECTION -->
-<view class="header h2 tc">
-  <view class="text-box">
+<view class="white-header h2 tc">
+  <view class="text-header-box">
    <view class="grey-text">WHAT IS</view>
    <text>LE WAGON?</text>
   </view>
@@ -11,8 +11,8 @@
 Break things</view>
 </view>
 <!-- SECOND SECTION -->
-<view class="header h2 tc">
- <view class="text-box">
+<view class="white-header h2 tc">
+ <view class="text-header-box">
   <view class="grey-text">WHO SHOULD</view>
   <text>ATTEND THE COURSE?</text>
  </view>

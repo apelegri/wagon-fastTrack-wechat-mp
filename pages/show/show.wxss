@@ -1,52 +1,32 @@
 /* pages/show/show.wxss */
-/* Header */
-.header-index::before {
-    content: '';
-    width: 100%;
-    height: 230px;
-    z-index: -1000;
-    background-image: -webkit-linear-gradient(330deg, #d4fc79 0%, #96e6a1 100%);
-    transform-origin: left bottom;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-transform: skew(0deg, -15deg);
-    transform: skew(0deg, -15deg);
-}
-.header-index:after {
-    content: '';
-    width: 100%;
-    height: 250px;
-    z-index: -1001;
-    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-    transform-origin: right bottom;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-transform: skew(0deg, 9deg);
-    transform: skew(0deg, 9deg);
-    opacity: 0.4;
-}
-.logo-show {
+.logo-gradient {
   width:50px;
   height:50px;
   margin-top:60rpx;
 }
-
-/* Card lecture & workshop */
+/* FIX COMMON STYLE */
+.h1 {
+  line-height:48rpx;
+  margin-top:15rpx;
+  margin-bottom:17rpx;
+}
+.h3 {
+  margin-top:45rpx;
+}
+/* CARD LECTURE & WORKSHOP */
 .card-lecture {
   background-color: white;
   border-radius: 8rpx;
-  box-shadow: 3px 6px 12px 0px rgba(0,0,0,0.1); 
+  box-shadow:0px 6px 8px 0px rgba(0,0,0,0.1);
   min-height:135px;
   width:100%;
   position: relative;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .card-workshop {
   background-color:white;
   border-radius:8rpx;
-  box-shadow:3px 6px 12px 4px rgba(0,0,0,0.1);
+  box-shadow:0px 6px 8px 0px rgba(0,0,0,0.1);
   min-height:135px;
   width:100%;
   position:relative;
@@ -59,14 +39,6 @@
 .card-content .h3 {
   margin-top: 0;
 }
-.h1 {
-  line-height:48rpx;
-  margin-top:15rpx;
-  margin-bottom:17rpx;
-}
-.h3 {
-  margin-top: 35rpx;
-}
 .card-desc {
   margin-top: 20rpx;
   color: #AAA;
@@ -78,50 +50,38 @@
   height:136rpx;
   position:relative;
   border-left: 4px solid #2ECC71;
+  display: flex;
 }
 .card-profile-red {
   background-color: #F5F5F5;
   height:136rpx;
   position:relative;
   border-left: 4px solid #D23333;
+  display: flex;
 }
 .card-avatar {
-  width:80rpx;
-  height:80rpx;
+  width:90rpx;
+  height:90rpx;
   border-radius:100%;
   display:flex;
   background-position:center;
-  position:absolute;
-  bottom:14px;
-  left:15px;
+  flex-grow:30%;
+  margin-left:35rpx;
+  margin-top:24rpx;
 }
 .grad-avatar {
   background:linear-gradient(-225deg, rgba(30,30,30,0.1) 30%, rgba(46,46,46,0.3) 80%);
-  width:80rpx;
-  height:80rpx;
+  width:90rpx;
+  height:90rpx;
   border-radius:100%;
   z-index: 3;
-  bottom:14px;
-  left:15px;
+  bottom:13px;
+  left:18px;
   position: absolute;
-}
-.avatar-info {
-  position:absolute;
-  left:68px;
-  bottom:14px;
-  line-height:36rpx;
-}
-.avatar-name {
-  font-size: 28rpx;
-  font-weight: 600; 
-}
-.position {
-  font-size:23rpx;
 }
 .course-desc {
   padding: 30rpx 30rpx 20rpx 30rpx;
 }
-
 .course-desc view{
   color: #999999;
   font-size: 28rpx;

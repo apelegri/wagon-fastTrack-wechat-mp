@@ -1,14 +1,12 @@
 <!--pages/show/show.wxml-->
-<view class="header-index tc">
- <image src="/image/white_logo_red_circle.png" class="logo-show"></image>
+<view class="green-gradient tc">
+ <image src="/image/white_logo_red_circle.png" class="logo-gradient"></image>
 </view>
 <!-- CARD SECTION -->
-
 <block wx:for="{{courses}}" wx:key="">
  <block wx:if="{{item.course_id == courseId}}">
   <view class="container">
    <view class="card-lecture" >
-
      <view class="card-content">
       <view class="h3">{{item.numLecture}}</view> 
       <view class="h1">{{item.titleLecture}}</view> 
